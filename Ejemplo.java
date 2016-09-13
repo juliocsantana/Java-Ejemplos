@@ -3,22 +3,28 @@ public class Ejemplo {
 
     // Un programa debe tener un método 'main' como punto de entrada
     public static void main (String[] args) {
-        // Arreglos
-        //El tamaño del arreglo debe decidirse en la declaración
-        //El formato para la declaración de un arreglo es la siguiente:
-        //<tipo_de_dato> [] <nombre_variable> = new <tipo_de_dato>[<tamaño_arreglo>];
-        int [] arreglo_de_enteros = new int[10];
-        String [] arreglo_de_strings = new String[1];
-        boolean [] arreglo_de_booleanos = new boolean[100];
+        ///////////////////////////////////////
+        // Operadores
+        ///////////////////////////////////////
+        System.out.println("Operadores");
 
-        // Otra forma de declarar & inicializar un arreglo
-        int [] y = {9000, 1000, 1337};
+        int i1 = 1, i2 = 2; // Abreviación para múltiples declaraciones
 
-        // Indexación de un arreglo - Accediendo un elemento
-        System.out.println("arreglo_de_enteros[0]: " + arreglo_de_enteros[0]);
+        // La aritmética es directa
+        System.out.println("1+2 = " + (i1 + i2)); // => 3
+        System.out.println("2-1 = " + (i2 - i1)); // => 1
+        System.out.println("2*1 = " + (i2 * i1)); // => 2
+        System.out.println("1/2 = " + (i1 / i2)); // => 0 (0.5 truncado)
 
-        // Arreglos comienzan su indexación en cero y son mutables
-        arreglo_de_enteros[1] = 1;
-        System.out.println("arreglo_de_enteros[1]: " + arreglo_de_enteros[1]); 
+        // Módulo
+        System.out.println("11%3 = "+(11 % 3)); // => 2
+
+        // Operadores de comparación
+        System.out.println("(3 == 2) => " + (3 == 2)); // => false
+        System.out.println("(3 != 2) => " + (3 != 2)); // => true
+        System.out.println("(3 > 2) => " + (3 > 2)); // => true
+        System.out.println("(3 < 2) => " + (3 < 2)); // => false
+        System.out.println("(2 <= 2) => " + (2 <= 2)); // => true
+        System.out.println("(2 >= 2) => " + (2 >= 2)); // => true
     }
 }
