@@ -3,15 +3,15 @@ public class Ejemplo {
 
     // Un programa debe tener un método 'main' como punto de entrada
     public static void main (String[] args) {
-        // Ciclos 'while'
-        int fooWhile = 0;
-        while(fooWhile < 100)
+        // Ciclos 'do while'
+        int fooDoWhile = 0;
+        do
         {
-            //System.out.println(fooWhile);
+            //System.out.println(fooDoWhile);
             //Incrementar el contador
-            //Iteró 99 veces, fooWhile 0->99
-            fooWhile++;
-        }
-        System.out.println("Valor fooWhile: " + fooWhile);
+            //Iteró 99 veces, fooDoWhile 0->99
+            fooDoWhile++;
+        }while(fooDoWhile < 100);
+        System.out.println("Valor fooDoWhile: " + fooDoWhile);
     }
 }
