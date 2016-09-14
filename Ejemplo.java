@@ -3,16 +3,19 @@ public class Ejemplo {
 
     // Un programa debe tener un método 'main' como punto de entrada
     public static void main (String[] args) {
-        // Incrementos
-        int j = 20;
-        System.out.println("El valor de j era de " + j);
-        j++;
-        j++;
-        ++j;
-        j++;
-        --j;
-        j--;
-        j--;
-        System.out.println("El valor de j es " + j);
+        ///////////////////////////////////////
+        // Estructuras de Control
+        ///////////////////////////////////////
+        System.out.println("Estructuras de Control");
+
+        // Condiciones 'if' son como en c
+        int j = 10;
+        if (j == 10){
+            System.out.println("Me imprimieron");
+        } else if (j > 10) {
+            System.out.println("A mi no");
+        } else {
+            System.out.println("A mi tampoco");
+        }
     }
 }
