@@ -3,13 +3,27 @@ public class Ejemplo {
 
     // Un programa debe tener un método 'main' como punto de entrada
     public static void main (String[] args) {
-        // Ciclos 'for'
-        int fooFor;
-        //Estructura del ciclo 'for' => for(<declaración_de_inicio>; <condicional>; <paso>)
-        for(fooFor=0; fooFor<10; fooFor++){
-            //System.out.println(fooFor);
-            //Iteró 10 veces, fooFor 0->9
+        // Switch Case
+        // Un 'switch' funciona con un tipo de dato byte, short, char e int
+        // También funciona con tipos enumerados (discutido en tipos Enum),
+        // la clase String y unas pocas clases especiales que envuelven
+        // tipos primitivos: Character, Byte, Short e Integer.
+        int mes = 3;
+        String mesString;
+        switch (mes){
+            case 1:
+                    mesString = "Enero";
+                    break;
+            case 2:
+                    mesString = "Febrero";
+                    break;
+            case 3:
+                    mesString = "Marzo";
+                    break;
+            default:
+                    mesString = "Algun otro mes";
+                    break;
         }
-        System.out.println("Valor fooFor: " + fooFor);
+        System.out.println("Resultado switch Case: " + mesString);
     }
 }
