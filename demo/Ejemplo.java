@@ -1,4 +1,5 @@
 public class Ejemplo {
+	
 	public static void main(String[] args) {
 		
         Empleado emp2= new Contador();
@@ -24,7 +25,7 @@ public class Ejemplo {
         emp3.setSalario(100);
         emp3.setHorasTrabajadas(40);
         
-        //Se imprime por el metodo toString toda la cadena de caracteres
+        //Se imprime por el metodo toString como una cadena de caracteres todos los atributos junto con sus respectivos valores
         System.out.println(emp3.toString() + " Salario"+emp3.calcular());
         
         
