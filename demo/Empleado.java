@@ -1,13 +1,19 @@
-package demo;
+
+
 
 public class Empleado {
+
 	private String nombre;
-	private String apellidos;
+	private String apellidoPaterno;
+	private String apellidoMaterno;
 	private int edad;
-	private float salario;
+	protected int salario;
+	protected int horasTrabajadas;
+	private String Puesto;
+
 
 	public Empleado() {
-
+			
 	}
 
 	public String getNombre() {
@@ -48,7 +54,38 @@ public class Empleado {
         return edad;
     }
 
-    public void setSalario(float salario) {
+    public void setSalario(int salario) {
     	this.salario = salario;
     }
+	
+    
+    public int getHorasTrabajadas() {
+		return horasTrabajadas;
+	}
+
+	public void setHorasTrabajadas(int horasTrabajadas) {
+		this.horasTrabajadas = horasTrabajadas;
+	}
+
+	public double calcular(){
+		float total= horasTrabajadas * salario;
+		return total ;
+	}
+	
+	public String getPuesto() {
+		return Puesto;
+	}
+
+	public void setPuesto(String puesto) {
+		Puesto = puesto;
+	}
+
+	@Override
+	public String toString() {
+		return "Empleado [nombre=" + nombre + ", Apellido Paterno="
+				+ apellidoPaterno + ", Apellido Materno=" + apellidoMaterno
+				+ ", Edad=" + edad + ", Horas Trabajadas=" + horasTrabajadas + ", Puesto=" + Puesto +",";
+	}
+    
+    
 }
